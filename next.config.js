@@ -9,6 +9,8 @@ const withBundleAnalyzer = bundleAnalyzer({
 })
 
 export default withBundleAnalyzer({
+  output: 'export',
+  trailingSlash: true,
   staticPageGenerationTimeout: 300,
   images: {
     remotePatterns: [
@@ -20,6 +22,7 @@ export default withBundleAnalyzer({
       { protocol: 'https', hostname: 's3.us-west-2.amazonaws.com' }
     ],
     formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   },
