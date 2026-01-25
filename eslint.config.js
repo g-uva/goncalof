@@ -1,6 +1,9 @@
 import { config } from '@fisch0920/config/eslint'
 
 export default [
+  {
+    ignores: ['node_modules', 'out', '.next', 'public']
+  },
   ...config,
   {
     files: ['**/*.ts', '**/*.tsx'],

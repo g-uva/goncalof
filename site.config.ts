@@ -14,7 +14,8 @@ export default siteConfig({
   author: 'Gonçalo Fereira',
 
   // open graph metadata (optional)
-  description: 'Gonçalo Ferreira - Researcher in Sustainable Large-Scale Distributed Systems',
+  description:
+    'Gonçalo Ferreira - Researcher in Sustainable Large-Scale Distributed Systems',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
