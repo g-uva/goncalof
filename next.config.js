@@ -4,12 +4,28 @@ import { fileURLToPath } from 'node:url'
 import bundleAnalyzer from '@next/bundle-analyzer'
 
 const withBundleAnalyzer = bundleAnalyzer({
-  // eslint-disable-next-line no-process-env
   enabled: process.env.ANALYZE === 'true'
 })
 
+// GitHub Pages serves your site under /<repo>/
+// In Actions, GITHUB_REPOSITORY is like "g-uva/goncalof"
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true'
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
+const basePath = isGitHubActions && repoName ? `/${repoName}` : ''
+
 export default withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
+
+  // This is the big one: makes Next produce a static export in /out
+  output: 'export',
+
+  // Helps GitHub Pages not 404 on routes
+  trailingSlash: true,
+
+  // Makes asset URLs work under /<repo>/
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : '',
+
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'www.notion.so' },
@@ -21,22 +37,18 @@ export default withBundleAnalyzer({
     ],
     formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+
+    // GitHub Pages has no Next.js Image Optimization API, so disable it.
+    unoptimized: true
   },
 
   webpack: (config) => {
-    // Workaround for ensuring that `react` and `react-dom` resolve correctly
-    // when using a locally-linked version of `react-notion-x`.
-    // @see https://github.com/vercel/next.js/issues/50391
     const dirname = path.dirname(fileURLToPath(import.meta.url))
     config.resolve.alias.react = path.resolve(dirname, 'node_modules/react')
-    config.resolve.alias['react-dom'] = path.resolve(
-      dirname,
-      'node_modules/react-dom'
-    )
+    config.resolve.alias['react-dom'] = path.resolve(dirname, 'node_modules/react-dom')
     return config
   },
 
-  // See https://react-tweet.vercel.app/next#troubleshooting
   transpilePackages: ['react-tweet']
 })
