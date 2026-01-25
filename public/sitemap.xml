@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3000</loc>
+  </url>
+
+  <url>
+    <loc>http://localhost:3000/</loc>
+  </url>
+
+    <url>
+      <loc>http://localhost:3000/goncalof-98768b2a0640413e97e57b6dc31b8468/</loc>
+    </url>
+
+    <url>
+      <loc>http://localhost:3000/wip-aws-certified-solutions-architect-associate-a1f31d08cf1a4e208db4839a4ece3576/</loc>
+    </url>
+
+    <url>
+      <loc>http://localhost:3000/wip-data-structures-algorithms-308c27be96e544809ce287b4953a94e9/</loc>
+    </url>
+
+    <url>
+      <loc>http://localhost:3000/notion-as-website-232068438fa045cd813484c54f207506/</loc>
+    </url>
+
+    <url>
+      <loc>http://localhost:3000/cv-resume-da731ff5e36b43d7a8ec98f0c55a7494/</loc>
+    </url>
+</urlset>
