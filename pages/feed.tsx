@@ -1,4 +1,7 @@
-import type { GetServerSideProps } from 'next'
+/* eslint-disable simple-import-sort/imports */
+import fs from 'node:fs/promises'
+import path from 'node:path'
+import type { GetStaticProps } from 'next'
 import { type ExtendedRecordMap } from 'notion-types'
 import {
   getBlockParentPage,
@@ -13,18 +16,9 @@ import { getSiteMap } from '@/lib/get-site-map'
 import { getSocialImageUrl } from '@/lib/get-social-image-url'
 import { getCanonicalPageUrl } from '@/lib/map-page-url'
 
-export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
-  if (req.method !== 'GET') {
-    res.statusCode = 405
-    res.setHeader('Content-Type', 'application/json')
-    res.write(JSON.stringify({ error: 'method not allowed' }))
-    res.end()
-    return { props: {} }
-  }
-
+export const getStaticProps: GetStaticProps = async () => {
   const siteMap = await getSiteMap()
   const ttlMinutes = 24 * 60 // 24 hours
-  const ttlSeconds = ttlMinutes * 60
 
   const feed = new RSS({
     title: config.name,
@@ -86,14 +80,13 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
 
   const feedText = feed.xml({ indent: true })
 
-  res.setHeader(
-    'Cache-Control',
-    `public, max-age=${ttlSeconds}, stale-while-revalidate=${ttlSeconds}`
+  await fs.writeFile(
+    path.join(process.cwd(), 'public', 'feed.xml'),
+    feedText,
+    'utf8'
   )
-  res.setHeader('Content-Type', 'text/xml; charset=utf-8')
-  res.write(feedText)
-  res.end()
 
+  // Static file emitted to /public; no page render required.
   return { props: {} }
 }
 

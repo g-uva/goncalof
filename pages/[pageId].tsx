@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps<PageProps, Params> = async (
   try {
     const props = await resolveNotionPage(domain, rawPageId)
 
-    return { props, revalidate: 10 }
+    return { props }
   } catch (err) {
     console.error('page error', domain, rawPageId, err)
 
@@ -45,7 +45,7 @@ export async function getStaticPaths() {
 
   const staticPaths = {
     paths: allPageIds.map((pageId) => ({ params: { pageId } })),
-    fallback: true
+    fallback: false
   }
 
   console.log(staticPaths.paths)
