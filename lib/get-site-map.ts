@@ -6,6 +6,7 @@ import * as config from './config'
 import { includeNotionIdInUrls } from './config'
 import { getCanonicalPageId } from './get-canonical-page-id'
 import { notion } from './notion-api'
+import { getRecordMapBlock } from './notion-helpers'
 
 const uuid = !!includeNotionIdInUrls
 
@@ -60,7 +61,7 @@ async function getAllPagesImpl(
         throw new Error(`Error loading page "${pageId}"`)
       }
 
-      const block = recordMap.block[pageId]?.value
+      const block = getRecordMapBlock(recordMap, pageId)
       if (
         !(getPageProperty<boolean | null>('Public', block!, recordMap) ?? true)
       ) {

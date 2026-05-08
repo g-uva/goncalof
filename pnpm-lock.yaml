@@ -39,14 +39,14 @@ importers:
         specifier: ^15.3.6
         version: 15.3.6(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       notion-client:
-        specifier: ^7.7.0
-        version: 7.7.0
+        specifier: ^7.10.0
+        version: 7.10.0
       notion-types:
-        specifier: ^7.7.0
-        version: 7.7.0
+        specifier: ^7.10.0
+        version: 7.10.0
       notion-utils:
-        specifier: ^7.7.0
-        version: 7.7.0
+        specifier: ^7.10.0
+        version: 7.10.0
       p-map:
         specifier: ^7.0.3
         version: 7.0.3
@@ -69,8 +69,8 @@ importers:
         specifier: ^19.1.1
         version: 19.1.1(react@19.1.1)
       react-notion-x:
-        specifier: ^7.7.0
-        version: 7.7.0(@babel/runtime@7.28.4)(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: ^7.10.0
+        version: 7.10.0(@babel/runtime@7.28.4)(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-tweet:
         specifier: ^3.2.2
         version: 3.2.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -817,8 +817,8 @@ packages:
   caniuse-lite@1.0.30001766:
     resolution: {integrity: sha512-4C0lfJ0/YPjJQHagaE9x2Elb69CIqEPZeG0anQt9SIvIoOH4a4uaRl73IavyO+0qZh6MDLH//DrXThEYKHkmYA==}
 
-  canvas@3.2.0:
-    resolution: {integrity: sha512-jk0GxrLtUEmW/TmFsk2WghvgHe8B0pxGilqCL21y8lHkPUGa6FTsnCNtHPOzT8O3y+N+m3espawV80bbBlgfTA==}
+  canvas@3.2.3:
+    resolution: {integrity: sha512-PzE5nJZPz72YUAfo8oTp0u3fqqY7IzlTubneAihqDYAUcBk7ryeCmBbdJBEdaH0bptSOe2VT2Zwcb3UaFyaSWw==}
     engines: {node: ^18.12.0 || >= 20.9.0}
 
   chalk@4.1.2:
@@ -1186,8 +1186,8 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
 
-  eventemitter3@5.0.1:
-    resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
+  eventemitter3@5.0.4:
+    resolution: {integrity: sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==}
 
   exenv@1.2.2:
     resolution: {integrity: sha512-Z+ktTxTwv9ILfgKCk32OX3n/doe+OcLTRtqK9pcL+JsP3J1/VW8Uvl4ZjLlKqeW4rzK4oesDOGMEMRIZqtP4Iw==}
@@ -1557,8 +1557,8 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
-  katex@0.16.23:
-    resolution: {integrity: sha512-7VlC1hsEEolL9xNO05v9VjrvWZePkCVBJqj8ruICxYjZfHaHbaU53AlP+PODyFIXEnaEIEWi3wJy7FPZ95JAVg==}
+  katex@0.16.21:
+    resolution: {integrity: sha512-XvqR7FgOHtWupfMiigNzmh+MgUVmDGU2kXZm899ZkPfcuoPuFxyHmXsgATDpFZDAXCI8tvinaVcDo8PIIJSo4A==}
     hasBin: true
 
   keyv@4.5.4:
@@ -1617,8 +1617,8 @@ packages:
   mdn-data@2.0.14:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==}
 
-  memoize@10.1.0:
-    resolution: {integrity: sha512-MMbFhJzh4Jlg/poq1si90XRlTZRDHVqdlz2mPyGJ6kqMpyHUyVpDd5gpFAvVehW64+RA1eKE9Yt8aSLY7w2Kgg==}
+  memoize@10.2.0:
+    resolution: {integrity: sha512-DeC6b7QBrZsRs3Y02A6A7lQyzFbsQbqgjI6UW0GigGWV+u1s25TycMr0XHZE4cJce7rY/vyw2ctMQqfDkIhUEA==}
     engines: {node: '>=18'}
 
   memorystream@0.3.1:
@@ -1720,8 +1720,8 @@ packages:
       sass:
         optional: true
 
-  node-abi@3.78.0:
-    resolution: {integrity: sha512-E2wEyrgX/CqvicaQYU3Ze1PFGjc4QYPGsjUrlYkqAE0WjHEZwgOsGMPMzkMse4LjJbDmaEuDX3CM036j5K2DSQ==}
+  node-abi@3.92.0:
+    resolution: {integrity: sha512-KdHvFWZjEKDf0cakgFjebl371GPsISX2oZHcuyKqM7DtogIsHrqKeLTo8wBHxaXRAQlY2PsPlZmfo+9ZCxEREQ==}
     engines: {node: '>=10'}
 
   node-addon-api@7.1.1:
@@ -1733,20 +1733,20 @@ packages:
   node-releases@2.0.21:
     resolution: {integrity: sha512-5b0pgg78U3hwXkCM8Z9b2FJdPZlr9Psr9V2gQPESdGHqbntyFJKFW4r5TeWGFzafGY3hzs1JC62VEQMbl1JFkw==}
 
-  normalize-url@8.1.0:
-    resolution: {integrity: sha512-X06Mfd/5aKsRHc0O0J5CUedwnPmnDtLF2+nq+KN9KSDlJHkPuh0JUviWjEWMe0SW/9TDdSLVPuk7L5gGTIA1/w==}
+  normalize-url@8.1.1:
+    resolution: {integrity: sha512-JYc0DPlpGWB40kH5g07gGTrYuMqV653k3uBKY6uITPWds3M0ov3GaWGp9lbE3Bzngx8+XkfzgvASb9vk9JDFXQ==}
     engines: {node: '>=14.16'}
 
-  notion-client@7.7.0:
-    resolution: {integrity: sha512-g1839mWYD6NdVHHIyq2E6gl+tvOsMGZQXNRJ5rg1dZkLnfMc6WwKx55UzRjnTE6+fXVDHFmSOb3ojtnkAFF+1A==}
+  notion-client@7.10.0:
+    resolution: {integrity: sha512-Rb4/nR4vIRwIExvKiVhZKJEpGoE0IRFlHMKbs0tcZcecZaUVRzVAu7PHuaHC5ivSds26z497dxXYF3mnMrMt7g==}
     engines: {node: '>=18'}
 
-  notion-types@7.7.0:
-    resolution: {integrity: sha512-X5V1LT+yqiDdDsOrNZbqRPh9XX886PNvOPIE0tFPd4yeYR35uRglrV1lYzrMjRhBTABCqw9SWBn0lTRwLx0low==}
+  notion-types@7.10.0:
+    resolution: {integrity: sha512-t57RdnGnup7NcMGJkrlshe3gXaFYOj565NL1Q1l/MrZZ/K2xbHO06PtBXDEFTFYjvxQagU0NzKzaSNKocU9e4Q==}
     engines: {node: '>=18'}
 
-  notion-utils@7.7.0:
-    resolution: {integrity: sha512-iEJLWYuPGIppfVq2IU8PTHhkswyCvPoMdEF1JBVrEad9r8FAgC8DpONQS4MPifZhMyx5sJeoQhZA+vhk2zQHhg==}
+  notion-utils@7.10.0:
+    resolution: {integrity: sha512-Z/L+xOzVWM5wBHOqLu3PwCzA/11yzVExMpR8FUcwHbS60DDULSgZgipXQBzKOlbQMnB+04BOkSGDNan+AxfxmA==}
     engines: {node: '>=18'}
 
   npm-normalize-package-bin@4.0.0:
@@ -1790,8 +1790,8 @@ packages:
     resolution: {integrity: sha512-gXah6aZrcUxjWg2zR2MwouP2eHlCBzdV4pygudehaKXSGW4v2AsRQUK+lwwXhii6KFZcunEnmSUoYp5CXibxtA==}
     engines: {node: '>= 0.4'}
 
-  ofetch@1.4.1:
-    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
+  ofetch@1.5.1:
+    resolution: {integrity: sha512-2W4oUZlVaqAPAil6FUg/difl6YhqhUR7x2eZY4bQCko22UXg3hptq9KLQdqFClV+Wu85UX7hNtdGTngi/1BxcA==}
 
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
@@ -1916,6 +1916,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   prelude-ls@1.2.1:
@@ -1934,8 +1935,8 @@ packages:
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
-  pump@3.0.3:
-    resolution: {integrity: sha512-todwxLMY7/heScKmntwQG8CXVkWUOdYxIvY2s0VWAAMh/nd8SoYiRaKjlr7+iCs984f2P8zvrfWcDDYVb73NfA==}
+  pump@3.0.4:
+    resolution: {integrity: sha512-VS7sjc6KR7e1ukRFhQSY5LM2uBWAUPiOPa/A3mkKmiMwSmRFUITt0xuj+/lesgnCv+dPIEYlkzrcyXgquIHMcA==}
 
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
@@ -1993,8 +1994,8 @@ packages:
       react: ^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18 || ^19
       react-dom: ^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18 || ^19
 
-  react-notion-x@7.7.0:
-    resolution: {integrity: sha512-xjg/81XTXC3MZVkNRiff1iNW7w5g7MZ0vh0qLh7Ch0eRDy4kt/lDtsWeEYXN1K+cxkaopDjpVF0Jt7FMIEQw6A==}
+  react-notion-x@7.10.0:
+    resolution: {integrity: sha512-i5FZKruMoRESnx5Lqq1kTp8a/eseErQ3Ph93dKCoCeRRN9hnPGCxUdnu/wsBp5h2BHMqswRujDiclqZvoQE2IA==}
     engines: {node: '>=18'}
     peerDependencies:
       react: '>=18'
@@ -2143,6 +2144,11 @@ packages:
 
   semver@7.7.3:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.7.4:
+    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -2396,8 +2402,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ufo@1.6.1:
-    resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
+  ufo@1.6.4:
+    resolution: {integrity: sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA==}
 
   unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
@@ -2794,9 +2800,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@matejmazur/react-katex@3.1.3(katex@0.16.23)(react@19.1.1)':
+  '@matejmazur/react-katex@3.1.3(katex@0.16.21)(react@19.1.1)':
     dependencies:
-      katex: 0.16.23
+      katex: 0.16.21
       react: 19.1.1
 
   '@next/bundle-analyzer@15.3.6':
@@ -3173,7 +3179,7 @@ snapshots:
 
   caniuse-lite@1.0.30001766: {}
 
-  canvas@3.2.0:
+  canvas@3.2.3:
     dependencies:
       node-addon-api: 7.1.1
       prebuild-install: 7.1.3
@@ -3664,7 +3670,7 @@ snapshots:
 
   esutils@2.0.3: {}
 
-  eventemitter3@5.0.1: {}
+  eventemitter3@5.0.4: {}
 
   exenv@1.2.2: {}
 
@@ -4030,7 +4036,7 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
-  katex@0.16.23:
+  katex@0.16.21:
     dependencies:
       commander: 8.3.0
 
@@ -4084,7 +4090,7 @@ snapshots:
 
   mdn-data@2.0.14: {}
 
-  memoize@10.1.0:
+  memoize@10.2.0:
     dependencies:
       mimic-function: 5.0.1
 
@@ -4177,9 +4183,9 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  node-abi@3.78.0:
+  node-abi@3.92.0:
     dependencies:
-      semver: 7.7.3
+      semver: 7.7.4
     optional: true
 
   node-addon-api@7.1.1:
@@ -4189,23 +4195,23 @@ snapshots:
 
   node-releases@2.0.21: {}
 
-  normalize-url@8.1.0: {}
+  normalize-url@8.1.1: {}
 
-  notion-client@7.7.0:
+  notion-client@7.10.0:
     dependencies:
-      notion-types: 7.7.0
-      notion-utils: 7.7.0
-      ofetch: 1.4.1
+      notion-types: 7.10.0
+      notion-utils: 7.10.0
+      ofetch: 1.5.1
       p-map: 7.0.3
 
-  notion-types@7.7.0: {}
+  notion-types@7.10.0: {}
 
-  notion-utils@7.7.0:
+  notion-utils@7.10.0:
     dependencies:
       is-url-superb: 6.1.0
-      memoize: 10.1.0
-      normalize-url: 8.1.0
-      notion-types: 7.7.0
+      memoize: 10.2.0
+      normalize-url: 8.1.1
+      notion-types: 7.10.0
       p-queue: 8.1.1
 
   npm-normalize-package-bin@4.0.0: {}
@@ -4263,11 +4269,11 @@ snapshots:
       define-properties: 1.2.1
       es-object-atoms: 1.1.1
 
-  ofetch@1.4.1:
+  ofetch@1.5.1:
     dependencies:
       destr: 2.0.5
       node-fetch-native: 1.6.7
-      ufo: 1.6.1
+      ufo: 1.6.4
 
   once@1.4.0:
     dependencies:
@@ -4316,7 +4322,7 @@ snapshots:
 
   p-queue@8.1.1:
     dependencies:
-      eventemitter3: 5.0.1
+      eventemitter3: 5.0.4
       p-timeout: 6.1.4
 
   p-timeout@3.2.0:
@@ -4340,7 +4346,7 @@ snapshots:
 
   pdfjs-dist@4.8.69:
     optionalDependencies:
-      canvas: 3.2.0
+      canvas: 3.2.3
       path2d: 0.2.2
     optional: true
 
@@ -4379,8 +4385,8 @@ snapshots:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 2.0.0
-      node-abi: 3.78.0
-      pump: 3.0.3
+      node-abi: 3.92.0
+      pump: 3.0.4
       rc: 1.2.8
       simple-get: 4.0.1
       tar-fs: 2.1.4
@@ -4399,7 +4405,7 @@ snapshots:
       object-assign: 4.1.1
       react-is: 16.13.1
 
-  pump@3.0.3:
+  pump@3.0.4:
     dependencies:
       end-of-stream: 1.4.5
       once: 1.4.0
@@ -4461,13 +4467,13 @@ snapshots:
       react-lifecycles-compat: 3.0.4
       warning: 4.0.3
 
-  react-notion-x@7.7.0(@babel/runtime@7.28.4)(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-notion-x@7.10.0(@babel/runtime@7.28.4)(@types/react@19.1.13)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@fisch0920/medium-zoom': 1.0.7
-      '@matejmazur/react-katex': 3.1.3(katex@0.16.23)(react@19.1.1)
-      katex: 0.16.23
-      notion-types: 7.7.0
-      notion-utils: 7.7.0
+      '@matejmazur/react-katex': 3.1.3(katex@0.16.21)(react@19.1.1)
+      katex: 0.16.21
+      notion-types: 7.10.0
+      notion-utils: 7.10.0
       prismjs: 1.30.0
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
@@ -4651,6 +4657,9 @@ snapshots:
   semver@7.7.2: {}
 
   semver@7.7.3:
+    optional: true
+
+  semver@7.7.4:
     optional: true
 
   set-function-length@1.2.2:
@@ -4910,7 +4919,7 @@ snapshots:
     dependencies:
       chownr: 1.1.4
       mkdirp-classic: 0.5.3
-      pump: 3.0.3
+      pump: 3.0.4
       tar-stream: 2.2.0
     optional: true
 
@@ -5008,7 +5017,7 @@ snapshots:
 
   typescript@5.9.2: {}
 
-  ufo@1.6.1: {}
+  ufo@1.6.4: {}
 
   unbox-primitive@1.1.0:
     dependencies:
